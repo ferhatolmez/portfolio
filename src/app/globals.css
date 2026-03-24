@@ -4,6 +4,7 @@
 
 body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 @layer base {
@@ -77,6 +78,11 @@ body {
 @layer utilities {
   .canvas-overlay-mode {
     pointer-events: none;
+  }
+
+  /* Allow vertical scroll over Spline canvas on mobile */
+  canvas {
+    touch-action: pan-y !important;
   }
 
   .canvas-overlay-mode a,
