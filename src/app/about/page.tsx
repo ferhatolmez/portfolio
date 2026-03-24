@@ -354,7 +354,7 @@ function Page() {
                     <SplideSlide key={tool.name}>
                       <div
                         key={tool.name}
-                        className="w-fit p-2 border-[.5px] border-zinc-600 rounded-md"
+                        className="w-fit p-2 flex justify-center items-center drop-shadow-lg"
                       >
                         {tool.icon}
                       </div>
