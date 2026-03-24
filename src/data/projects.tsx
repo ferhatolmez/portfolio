@@ -349,8 +349,8 @@ const projects: Project[] = [
     id: "webrtc-pro",
     category: "Video Communication",
     title: "WebRTC Pro",
-    src: "/assets/projects-screenshots/webrtc-pro/landing.png",
-    screenshots: ["landing.png"],
+    src: "/assets/projects-screenshots/WebRTCProjesi/webrtc1.png",
+    screenshots: ["webrtc1.png", "webrtc2.png"],
     skills: {
       frontend: [PROJECT_SKILLS.react, PROJECT_SKILLS.ts],
       backend: [
@@ -359,7 +359,7 @@ const projects: Project[] = [
         PROJECT_SKILLS.webrtc,
       ],
     },
-    github: "https://github.com/ferhatolmez/webrtc-pro",
+    github: "https://github.com/ferhatolmez/WebRTCProjesi",
     get content() {
       return (
         <div>

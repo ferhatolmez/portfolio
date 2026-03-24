@@ -36,7 +36,7 @@ const Modall = ({ project }: { project: Project }) => {
       <Modal>
         <ModalTrigger className="bg-transparent flex justify-center group/modal-btn">
           <div
-            className="relative w-full max-w-[400px] h-auto rounded-lg overflow-hidden mx-auto"
+            className="relative w-[90vw] sm:w-[350px] md:w-[400px] h-auto rounded-lg overflow-hidden mx-auto"
             style={{ aspectRatio: "3/2" }}
           >
             <Image
