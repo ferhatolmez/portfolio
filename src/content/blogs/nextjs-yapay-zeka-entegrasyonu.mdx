@@ -1,0 +1,33 @@
+---
+title: "Yapay Zeka ve Modern Web: Next.js Projelerine AI Entegrasyonu"
+publishedAt: "2026-03-23"
+summary: "OpenAI API'leri ve modern araçlarla sıfırdan yapay zeka destekli web platformları inşa etmek."
+author: "Ferhat Ölmez"
+tags: ["nextjs", "yapay-zeka", "openai", "react"]
+---
+
+# Yapay Zekayı Uygulamalarımıza Entegre Etmek
+
+Son yılların tartışmasız en büyük teknoloji trendi olan Yapay Zeka (AI), sadece veri bilimcilerinin değil, biz Full Stack geliştiricilerin de en güçlü destekçilerinden biri haline geldi. Kendi geliştirdiğim "Chat-AI" projemde bizzat deneyimlediğim gibi, yapay zekayı modern web frameworkleri ile harmanlamak inanılmaz, ölçeklenebilir sonuçlar doğuruyor.
+
+## Neden Next.js?
+
+Yapay zeka entegrasyonu yaparken, sunucu ve istemci tarafını güçlü bir şekilde yönetmeniz gerekir. **Next.js**, sunduğu Route Handler (API Routes) yapısı ve Server Components mimarisi ile bu süreçte harika bir geliştirici deneyimi (DX) sunuyor ve modern API'ler kurmayı çok kolaylaştırıyor.
+
+API anahtarlarınızı (örneğin OpenAI Secret Key) güvenli bir şekilde sunucu tarafında saklayabilirken, aynı proje dizininde istemci tarafını (UI) Next.js'in hız avantajlarıyla geliştirebiliyorsunuz.
+
+## Vercel AI SDK Hayat Kurtarıyor
+
+AI entegrasyonu yaparken en büyük sorunlardan biri "Streaming" (kademeli yazım) özelliğini arayüze taşımaktır. ChatGPT kullanırken metinlerin daktilo gibi kelime kelime ekrana düşmesini sağlayan sistem diyebiliriz buna. Vercel AI SDK kullanmadan bunu saf React ile yapmaya çalışmak, state yönetimi açısından oldukça sancılı olabiliyor. Ancak modern yapılar sayesinde:
+
+- Kullanıcı girdisini yönetmek,
+- Mesaj geçmişini tutmak,
+- Sunucudan gelen akışkan (stream) veriyi anında ekrana yansıtmak
+
+sadece birkaç satır koda düşüyor. 
+
+## Kullanıcı Deneyimi (UX) Yapay Zeka ile Buluşuyor
+
+Bir projeye AI eklemek sadece "arka plana akıllı bir kod bağlamak" demek değildir. Asıl zorluk, kullanıcıya o aklın bir parçası gibi hissettirebilmektir. React'ın esnekliği sayesinde, yapay zekadan dönen karmaşık verileri (JSON vb.) alıp anında dinamik UI bileşenlerine dönüştürebilirsiniz.
+
+Sonuç olarak, AI entegrasyonu artık ulaşılmaz bir sistem mühendisliği konusu olmaktan çıktı. Geliştiriciler için OpenAI, Anthropic gibi firmaların sunduğu kolay REST API'ler sayesinde limitler sadece hayal gücümüzle sınırlı. Önümüzdeki projelerimde yapay zekayı sadece bir sohbet botu olarak değil, sitenin kendisini otomatik yöneten akıllı yapılarda kullanmayı heyecanla planlıyorum.

@@ -275,8 +275,8 @@ function Page() {
                   className="rounded-full p-4 lg:p-10 w-[100px] md:w-[150px] lg:w-[200px] aspect-square  bg-zinc-800"
                   alt="Ferhat Ölmez"
                   src="/assets/me.jpg"
-                  width={200}
-                  height={200}
+                  width={500}
+                  height={500}
                   priority
                 />
               </div>
