@@ -1,8 +1,9 @@
 <div align="center">
   
   <a href="https://ferhatolmez.vercel.app">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=45&duration=4000&pause=1000&color=06B6D4&center=true&vCenter=true&width=800&lines=Ferhat+%C3%96lmez;Interactive+3D+Portfolio;Full-Stack+Developer" alt="Animated Logo" />
+    <img src="./public/assets/github-banner.png" alt="Ferhat Ölmez Portfolio Banner" width="100%" style="border-radius: 12px; margin-bottom: 20px;" />
   </a>
+  <h1 align="center">🌌 Ferhat Ölmez — 3D Interactive Developer Portfolio</h1>
 
   <p align="center">
     A highly interactive, visually stunning, and performance-optimized 3D portfolio built to showcase modern Full-Stack capabilities.<br/>
