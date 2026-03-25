@@ -27,6 +27,13 @@ const io = new Server(server, {
 const msgs = [];
 const users = new Map();
 
+// Her 24 saatte bir (86.400.000 ms) sohbet algoritmasını tamamen temizle
+setInterval(() => {
+  msgs.length = 0; // Diziyi hafızadan tamamen kazıyarak temizler
+  io.emit('msgs-receive-init', msgs); // Bağlı olan herkese "Sohbet temizlendi" sinyali yollar ve ekranlarındaki metinleri siler
+  console.log('[SYSTEM] Günlük standart otomatik sohbet temizliği yapıldı.');
+}, 24 * 60 * 60 * 1000);
+
 // Session ID Middleware
 io.use((socket, next) => {
   const sessionId = socket.handshake.auth.sessionId;
