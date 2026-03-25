@@ -198,8 +198,12 @@ const projects: Project[] = [
     id: "su-tedarik",
     category: "Freelance Client Project",
     title: "Endüstriyel Su Tedarik Kurumsal Web Sitesi",
-    src: "/assets/projects-screenshots/su-tedarik/1.png",
-    screenshots: ["1.png"],
+    src: "/assets/projects-screenshots/su-tedarik/su1.png",
+    screenshots: [
+      "su1.png", "su2.png", "su3.png", "su4.png", "su5.png",
+      "su6.png", "su7.png", "su8.png", "su9.png", "su10.png",
+      "su11.png", "su12.png", "su13.png"
+    ],
     skills: {
       frontend: [PROJECT_SKILLS.react, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.ts],
       backend: [],
@@ -216,16 +220,26 @@ const projects: Project[] = [
           </TypographyP>
           <ProjectsLinks live={this.live} />
           <TypographyH3 className="my-4 mt-8">
-            Performans ve Responsive Arayüz
+            Gelişmiş Mimari, SEO ve Çoklu Dil
           </TypographyH3>
           <p className="font-mono mb-2">
-            React ve Tailwind CSS kullanılarak her türlü mobil cihaza tam uyumlu geliştirilmiş arayüz. Yüksek site hızıyla müşteri deneyimini maksimize eden modern dokunuşlar.
+            React v19 tabanlı modern web projesi. <strong>react-helmet-async</strong> ile %100 SEO uyumluluğu, <strong>react-i18next</strong> ile çoklu dil desteği (localization) ve <strong>react-router-dom</strong> ile kesintisiz (SPA) sayfa yönlendirmeleri eklendi. Ayrıca UI tarafında Tailwind CSS ve React Icons kullanılarak modern hız performans standartları yakalandı. Müşteri memnuniyeti yüksek bir kurumsal çözüm ortaya çıkarıldı.
           </p>
           <SlideShow
             images={[
-              `${BASE_PATH}/su-tedarik/1.png`,
-              `${BASE_PATH}/su-tedarik/2.png`,
-              `${BASE_PATH}/su-tedarik/3.png`
+              `${BASE_PATH}/su-tedarik/su1.png`,
+              `${BASE_PATH}/su-tedarik/su2.png`,
+              `${BASE_PATH}/su-tedarik/su3.png`,
+              `${BASE_PATH}/su-tedarik/su4.png`,
+              `${BASE_PATH}/su-tedarik/su5.png`,
+              `${BASE_PATH}/su-tedarik/su6.png`,
+              `${BASE_PATH}/su-tedarik/su7.png`,
+              `${BASE_PATH}/su-tedarik/su8.png`,
+              `${BASE_PATH}/su-tedarik/su9.png`,
+              `${BASE_PATH}/su-tedarik/su10.png`,
+              `${BASE_PATH}/su-tedarik/su11.png`,
+              `${BASE_PATH}/su-tedarik/su12.png`,
+              `${BASE_PATH}/su-tedarik/su13.png`
             ]}
           />
         </div>
