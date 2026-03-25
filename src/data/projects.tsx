@@ -198,8 +198,11 @@ const projects: Project[] = [
     id: "mern-chat",
     category: "Real-time Communication",
     title: "MERN Stack Chat Platform",
-    src: "/assets/projects-screenshots/mern-chat/landing.png",
-    screenshots: ["landing.png"],
+    src: "/assets/projects-screenshots/mern-chat/mern1.png",
+    screenshots: [
+      "mern1.png", "mern2.png", "mern3.png", "mern4.png", "mern5.png",
+      "mern6.png", "mern7.png", "mern8.png", "mern9.png", "mern10.png"
+    ],
     skills: {
       frontend: [
         PROJECT_SKILLS.react,
@@ -245,7 +248,18 @@ const projects: Project[] = [
             durum takibi. Özel ve genel oda yapısıyla esnek iletişim.
           </p>
           <SlideShow
-            images={[`${BASE_PATH}/mern-chat/landing.png`]}
+            images={[
+              `${BASE_PATH}/mern-chat/mern1.png`,
+              `${BASE_PATH}/mern-chat/mern2.png`,
+              `${BASE_PATH}/mern-chat/mern3.png`,
+              `${BASE_PATH}/mern-chat/mern4.png`,
+              `${BASE_PATH}/mern-chat/mern5.png`,
+              `${BASE_PATH}/mern-chat/mern6.png`,
+              `${BASE_PATH}/mern-chat/mern7.png`,
+              `${BASE_PATH}/mern-chat/mern8.png`,
+              `${BASE_PATH}/mern-chat/mern9.png`,
+              `${BASE_PATH}/mern-chat/mern10.png`
+            ]}
           />
           <TypographyH3 className="my-4 mt-8">
             Güvenlik ve Yönetim
