@@ -11,14 +11,14 @@ import "@splidejs/react-splide/css";
 const PROJECTS = [
   {
     id: 1,
-    name: "WebRTCProjesi",
+    name: "WebRTC Projesi",
     description: `Dive into CodingDucks, a fusion of CodePen's creative playground with LeetCode's problem-solving realm.
 Whether you're a newbie or a seasoned coder, join the community to paddle through coding adventures and let your
 creativity soar.`,
     link: "https://webrtcprojesi.onrender.com/",
     images: [
-      "/assets/projects-screenshots/WebRTCProjesi/webrtc1.png",
-      "/assets/projects-screenshots/WebRTCProjesi/webrtc2.png",
+      "/assets/projects-screenshots/webrtc-pro/webrtc1.png",
+      "/assets/projects-screenshots/webrtc-pro/webrtc2.png",
     ],
   },
   {

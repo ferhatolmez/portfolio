@@ -18,6 +18,7 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiBootstrap,
+
 } from "react-icons/si";
 import { TbDeviceMobileCode } from "react-icons/tb";
 const BASE_PATH = "/assets/projects-screenshots";
@@ -211,6 +212,16 @@ const projects: Project[] = [
         PROJECT_SKILLS.mongo,
         PROJECT_SKILLS.socketio,
         PROJECT_SKILLS.redis,
+        PROJECT_SKILLS.dotnet,
+        PROJECT_SKILLS.python,
+        PROJECT_SKILLS.sqlite,
+        PROJECT_SKILLS.laravel,
+        PROJECT_SKILLS.bootstrap,
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.signalr,
+        PROJECT_SKILLS.webrtc,
+        PROJECT_SKILLS.postgres,
+
       ],
     },
     github: "https://github.com/ferhatolmez/mern-chat",
@@ -306,8 +317,12 @@ const projects: Project[] = [
     id: "lohusa-platform",
     category: "Health Platform",
     title: "Lohusa ve Bebek İzlem Platformu",
-    src: "/assets/projects-screenshots/lohusa-platform/landing.png",
-    screenshots: ["landing.png"],
+    src: "/assets/projects-screenshots/lohusa-platform/lohusa1.png",
+    screenshots: [
+      "lohusa1.png", "lohusa2.png", "lohusa3.png", "lohusa4.png", 
+      "lohusa5.png", "lohusa6.png", "lohusa7.png", "lohusa8.png", 
+      "lohusa9.png", "lohusa10.png", "lohusa11.png", "lohusa12.png", "lohusa13.png"
+    ],
     skills: {
       frontend: [PROJECT_SKILLS.bootstrap, PROJECT_SKILLS.ts],
       backend: [PROJECT_SKILLS.laravel, PROJECT_SKILLS.postgres],
@@ -331,7 +346,21 @@ const projects: Project[] = [
             otomatik risk skoru hesaplama sistemi.
           </p>
           <SlideShow
-            images={[`${BASE_PATH}/lohusa-platform/landing.png`]}
+            images={[
+              `${BASE_PATH}/lohusa-platform/lohusa1.png`,
+              `${BASE_PATH}/lohusa-platform/lohusa2.png`,
+              `${BASE_PATH}/lohusa-platform/lohusa3.png`,
+              `${BASE_PATH}/lohusa-platform/lohusa4.png`,
+              `${BASE_PATH}/lohusa-platform/lohusa5.png`,
+              `${BASE_PATH}/lohusa-platform/lohusa6.png`,
+              `${BASE_PATH}/lohusa-platform/lohusa7.png`,
+              `${BASE_PATH}/lohusa-platform/lohusa8.png`,
+              `${BASE_PATH}/lohusa-platform/lohusa9.png`,
+              `${BASE_PATH}/lohusa-platform/lohusa10.png`,
+              `${BASE_PATH}/lohusa-platform/lohusa11.png`,
+              `${BASE_PATH}/lohusa-platform/lohusa12.png`,
+              `${BASE_PATH}/lohusa-platform/lohusa13.png`,
+            ]}
           />
           <TypographyH3 className="my-4 mt-8">
             Raporlama ve Dışa Aktarma
@@ -349,8 +378,8 @@ const projects: Project[] = [
     id: "webrtc-pro",
     category: "Video Communication",
     title: "WebRTC Pro",
-    src: "/assets/projects-screenshots/WebRTCProjesi/webrtc1.png",
-    screenshots: ["webrtc1.png", "webrtc2.png"],
+    src: "/assets/projects-screenshots/webrtc-pro/webrtc1.png",
+    screenshots: ["webrtc1.png"],
     skills: {
       frontend: [PROJECT_SKILLS.react, PROJECT_SKILLS.ts],
       backend: [
@@ -380,7 +409,7 @@ const projects: Project[] = [
             aktarımı. Tarayıcı ve masaüstü istemcileri aynı oda yapısında.
           </p>
           <SlideShow
-            images={[`${BASE_PATH}/webrtc-pro/landing.png`]}
+            images={[`${BASE_PATH}/WebRTCProjesi/webrtc1.png`, `${BASE_PATH}/WebRTCProjesi/webrtc2.png`]}
           />
           <TypographyH3 className="my-4 mt-8">
             Ek Özellikler
