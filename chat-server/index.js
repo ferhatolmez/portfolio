@@ -82,14 +82,21 @@ io.on('connection', (socket) => {
       createdAt: new Date()
     };
     
-    // Geçmişte en fazla son 100 mesajı tut (RAM tasarrufu)
     if (msgs.length > 100) msgs.shift();
-    
     msgs.push(newMsg);
-    
-    // Herkese fırlat
     io.emit('msg-receive', newMsg);
     console.log(`[MSG] ${newMsg.username}: ${newMsg.content}`);
+  });
+
+  // Cursor (Fare İmleci) senkronizasyonu
+  socket.on('cursor-change', (data) => {
+    // Sadece diğerlerine gönder (kendisine değil)
+    socket.broadcast.emit('cursor-changed', data);
+  });
+
+  // Yazıyor... (Typing) animasyonu
+  socket.on('typing', (data) => {
+    socket.broadcast.emit('typing', data);
   });
 
   // Mesaj silme talebi

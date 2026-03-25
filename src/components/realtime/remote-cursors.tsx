@@ -57,7 +57,7 @@ const RemoteCursors = () => {
       style={{ minHeight: '100vh' }}
     >
       {users
-        .filter((user) => user.socketId !== socket?.id)
+        .filter((user) => user.socketId !== socket?.id && user.posX !== undefined && user.posY !== undefined)
         .map((user) => (
           <Cursor
             key={user.socketId}
