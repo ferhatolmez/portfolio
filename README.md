@@ -1,59 +1,84 @@
-# 🌌 Ferhat Ölmez - 3D Interactive Developer Portfolio
+<div align="center">
+  
+  <h1 align="center">🌌 Ferhat Ölmez — 3D Interactive Developer Portfolio</h1>
 
-![Next.js](https://img.shields.io/badge/Next.js-14.2.3-black?logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/React-18-blue?logo=react&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-Backend-green?logo=nodedotjs&logoColor=white)
-![Socket.IO](https://img.shields.io/badge/Socket.IO-Realtime-black?logo=socketdotio&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-Styling-06B6D4?logo=tailwindcss&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-Animations-e61e74?logo=framer&logoColor=white)
+  <p align="center">
+    A highly interactive, visually stunning, and performance-optimized 3D portfolio built to showcase modern Full-Stack capabilities.<br/>
+    <strong>Explore the Live Experience:</strong> <a href="https://ferhatolmez.vercel.app">ferhatolmez.vercel.app</a>
+  </p>
 
-A highly interactive, visually stunning, and performance-optimized 3D portfolio built exclusively to showcase the projects, skills, and full-stack capabilities of **Ferhat Ölmez** — a Junior Full Stack Developer.
+  <p align="center">
+    <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-14.2.3-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" /></a>
+    <a href="https://reactjs.org/"><img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react&logoColor=white" alt="React" /></a>
+    <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" /></a>
+    <a href="https://socket.io/"><img src="https://img.shields.io/badge/Socket.IO-Realtime-black?style=for-the-badge&logo=socketdotio&logoColor=white" alt="Socket.IO" /></a>
+    <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" /></a>
+    <a href="https://www.framer.com/motion/"><img src="https://img.shields.io/badge/Framer_Motion-Animations-e61e74?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" /></a>
+  </p>
+</div>
 
-## ✨ Key Technical Features
+<br/>
 
-- **🌐 Live Global Chat (#general):** A robust, 7/24 anonymous chat room integrated directly into the navigation bar. Powered by a custom **Express & Socket.IO** backend with real-time payload mapping and a robust 24-hour automatic garbage collector (Cron Job) to clear logs.
-- **🖱️ Real-time Multiplayer Cursors:** Borrowing concepts from Figma, visitors can see the live cursors of other online guests hovering and moving across the screen via WebSockets. Active coordinate tracking explicitly hides ghost avatars from mobile users.
-- **📧 Resend API Integration:** A fully functional `Contact` email form using Next.js Serverless API routes and the Resend SDK. No more clunky `mailto:` links—emails are securely dispatched to the main inbox natively without leaving the page.
-- **🎮 3D WebGL Backgrounds:** Immersive 3D environments injected through `@splinetool`. Deep WebGL optimizations and GSAP cleanup routines have been applied to ensure strict 60 FPS scrolling and low GPU usage.
-- **🚀 Dynamic Project Showcase:** Highlights a hand-crafted suite of full-stack projects including a _MERN Chat App_, _WebRTC Video Suite_, _Lohusa & Baby Monitor (Laravel)_, and the _Industrial Water Supply UI_.
+## 📖 Table of Contents
+- [✨ Key Features](#-key-features)
+- [🏗️ Technology Stack](#️-technology-stack)
+- [💻 Getting Started (Local Development)](#-getting-started-local-development)
+  - [1. Socket.IO Chat Server (Backend)](#1-start-the-socketio-chat-server-backend)
+  - [2. Next.js Portfolio (Frontend)](#2-start-the-portfolio-website-frontend)
+- [🌍 Deployment](#-deployment-options)
+- [📬 Contact & Links](#-contact--links)
+
+---
+
+## ✨ Key Features
+
+This repository is more than just a typical landing page. It operates as a full-stack playground to showcase advanced web technologies.
+
+* **🌐 Live Global Chat (`#general`):** A robust, 24/7 anonymous chat room natively integrated into the site's navigation bar. 
+  * Powered by a separate `Express & Socket.IO` architecture.
+  * Features a **24-hour Automatic Garbage Collector** (Cron) that clears messages daily to protect memory.
+* **🖱️ Real-Time Multiplayer Cursors:** Inspired by Figma's multiplayer design. Sit back and watch other live visitors' mouse cursors float seamlessly across your screen via WebSockets.
+* **📧 Serverless Email Integration:** A highly secure `Contact` form built using Next.js API Routes and the **Resend API**. Sends direct, formatted HTML messages right to my official inbox.
+* **🎮 3D WebGL Backgrounds:** Injected with `@splinetool/react-spline`. Engineered with deep GSAP and Tailwind CSS optimizations to ensure mobile devices maintain a strict, tear-free **60 FPS** scrolling experience.
+* **🚀 Elite Portfolio Showcase:** Dedicated sections detailing real-world architectural builds, including a _MERN Stack App_, _WebRTC Video Suite_, and _Laravel Patient Management Tools_.
+
+---
 
 ## 🏗️ Technology Stack
 
-### Frontend (Next.js)
-- **Framework:** Next.js 14, React 18, TypeScript
-- **Styling:** Tailwind CSS, Radix UI (shadcn/ui), SCSS modules
-- **Animations:** Framer Motion, GSAP, Canvas Confetti
-- **3D Render:** Spline (`@splinetool/react-spline`)
-
-### Backend (Global Chat Server)
-- **Framework:** Node.js, Express.js
-- **WebSockets:** Socket.IO
-- **Architecture:** Lightweight Memory-Mapping, CORS hardened, 24h setInterval Sweeper
+### End-to-End Environment
+| Category | Technologies |
+| --- | --- |
+| **Frontend Framework** | `Next.js 14 (App Router)`, `React 18`, `TypeScript` |
+| **Styling & UI** | `Tailwind CSS`, `Radix UI (shadcn)`, `SCSS` |
+| **Animations** | `Framer Motion`, `GSAP`, `Canvas Confetti` |
+| **3D Rendering** | `Spline` (`@splinetool/runtime`) |
+| **Backend API** | `Node.js`, `Express.js`, `Resend SDK` |
+| **Realtime Engine** | `Socket.IO` (Client & Server) |
 
 ---
 
 ## 💻 Getting Started (Local Development)
 
-Because this portfolio utilizes a fully independent **Backend** for its Real-Time WebSocket features, you need to spin up two separate terminals.
+Because this portfolio utilizes an independent backend for real-time WebSocket capabilities, you need to instantiate two separate terminal processes.
 
 ### 1. Start the Socket.IO Chat Server (Backend)
-Open a new terminal and navigate to the embedded chat server directory:
+Open your first terminal window, navigate into the hidden server directory, and start the node service:
 ```bash
 cd chat-server
 npm install
 npm start
 ```
-*The WebSocket server will actively listen on `http://localhost:8080`.*
+> **Note:** The Express server will actively listen on `http://localhost:8080`.
 
 ### 2. Start the Portfolio Website (Frontend)
-Open a SECOND terminal in the root directory and install Next.js dependencies:
+Open a **second** terminal window in the repository's root directory:
 ```bash
 npm install
 ```
 
-Make sure your local `.env` file mimics `.env.example` and points the `NEXT_PUBLIC_WS_URL` to your local chat server:
+Create a fresh `.env` file at the root to bind the frontend to your local Chat API and Resend:
 ```env
-# .env file
 RESEND_API_KEY=your_resend_api_token
 NEXT_PUBLIC_WS_URL=http://localhost:8080
 ```
@@ -62,19 +87,29 @@ Boot up the development environment:
 ```bash
 npm run dev
 ```
-*Visit `http://localhost:3000` to dive into the 3D experience.*
+> **Success:** Visit `http://localhost:3000` to dive into the 3D experience.
 
 ---
 
 ## 🌍 Deployment Options
 
-To deploy this project for the world to see:
-1. **Frontend:** Deploy the root Next.js framework on **[Vercel](https://vercel.com/)** (Set `Root Directory` to `/`).
-2. **Backend:** Deploy the `chat-server` folder independently to a cloud container like **[Render](https://render.com/)** or Railway as a Node.js Web Service (Set `Root Directory` to `chat-server`).
-3. Pass the live Render URL into your Vercel Environment Variables as `NEXT_PUBLIC_WS_URL`.
+If you wish to fork and deploy this architecture yourself, follow the split-deploy strategy:
+
+1. **Frontend (Vercel):** Create a new Vercel project targeting the root (`/`) directory. This handles the Next.js static and serverless deployments flawlessly.
+2. **Backend (Render):** Create a new Render Web Service. Target the `chat-server` folder as your Root Directory. Let Render act as the persistent 24/7 host for your WebSockets.
+3. Finally, place your production Render URL (e.g., `https://chat-service.onrender.com`) into your Vercel project's Environment Variables as `NEXT_PUBLIC_WS_URL`.
 
 ---
 
+## 📬 Contact & Links
+
+Have a highly demanding web application to build, or looking to augment your development team? Let's connect.
+
+- **LinkedIn:** [Ferhat Ölmez](https://linkedin.com/in/ferhat-ölmez)
+- **GitHub:** [@ferhatolmez](https://github.com/ferhatolmez)
+- **Live Site:** [ferhatolmez.vercel.app](https://ferhatolmez.vercel.app)
+
+<br/>
 <div align="center">
-  <i>Developed and refined with ♥ by <a href="https://github.com/ferhatolmez">Ferhat Ölmez</a>.</i>
+  <i>Developed and engineered with ♥ by Ferhat Ölmez.</i>
 </div>
