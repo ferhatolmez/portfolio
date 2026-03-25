@@ -52,7 +52,9 @@ io.on('connection', (socket) => {
     name: "Guest",
     avatar: "1",
     color: "#60a5fa",
-    isOnline: true
+    isOnline: true,
+    posX: -1000,
+    posY: -1000
   };
   users.set(socket.id, userObj);
   // HATA FIX: 'users-update' yerine bağlanan istemci aslında Context içerisinde 'users-update' mi dinliyor yoksa 'users'?
