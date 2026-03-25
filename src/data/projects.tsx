@@ -216,15 +216,6 @@ const projects: Project[] = [
         PROJECT_SKILLS.socketio,
         PROJECT_SKILLS.redis,
         PROJECT_SKILLS.dotnet,
-        PROJECT_SKILLS.python,
-        PROJECT_SKILLS.sqlite,
-        PROJECT_SKILLS.laravel,
-        PROJECT_SKILLS.bootstrap,
-        PROJECT_SKILLS.ts,
-        PROJECT_SKILLS.signalr,
-        PROJECT_SKILLS.webrtc,
-        PROJECT_SKILLS.postgres,
-
       ],
     },
     github: "https://github.com/ferhatolmez/mernapp",
@@ -405,6 +396,7 @@ const projects: Project[] = [
       ],
     },
     github: "https://github.com/ferhatolmez/WebRTCProjesi",
+    live: "https://webrtcprojesi.onrender.com/",
     get content() {
       return (
         <div>
