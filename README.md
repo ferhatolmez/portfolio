@@ -1,6 +1,8 @@
 <div align="center">
   
-  <h1 align="center">🌌 Ferhat Ölmez — 3D Interactive Developer Portfolio</h1>
+  <a href="https://ferhatolmez.vercel.app">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=45&duration=4000&pause=1000&color=06B6D4&center=true&vCenter=true&width=800&lines=Ferhat+%C3%96lmez;Interactive+3D+Portfolio;Full-Stack+Developer" alt="Animated Logo" />
+  </a>
 
   <p align="center">
     A highly interactive, visually stunning, and performance-optimized 3D portfolio built to showcase modern Full-Stack capabilities.<br/>
@@ -8,12 +10,19 @@
   </p>
 
   <p align="center">
-    <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-14.2.3-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" /></a>
-    <a href="https://reactjs.org/"><img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react&logoColor=white" alt="React" /></a>
-    <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" /></a>
-    <a href="https://socket.io/"><img src="https://img.shields.io/badge/Socket.IO-Realtime-black?style=for-the-badge&logo=socketdotio&logoColor=white" alt="Socket.IO" /></a>
-    <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" /></a>
-    <a href="https://www.framer.com/motion/"><img src="https://img.shields.io/badge/Framer_Motion-Animations-e61e74?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" /></a>
+    <a href="https://ferhatolmez.vercel.app"><img src="https://img.shields.io/website?url=https%3A%2F%2Fferhatolmez.vercel.app&style=for-the-badge&label=Vercel+Deploy&color=success" alt="Deploy Status" /></a>
+    <a href="https://github.com/ferhatolmez/portfolio/issues"><img src="https://img.shields.io/github/issues/ferhatolmez/portfolio?style=for-the-badge&color=red" alt="Issues" /></a>
+    <a href="https://github.com/ferhatolmez/portfolio/stargazers"><img src="https://img.shields.io/github/stars/ferhatolmez/portfolio?style=for-the-badge&color=yellow" alt="Stars" /></a>
+    <a href="https://github.com/ferhatolmez/portfolio/network/members"><img src="https://img.shields.io/github/forks/ferhatolmez/portfolio?style=for-the-badge&color=orange" alt="Forks" /></a>
+    <a href="https://github.com/ferhatolmez/portfolio/commits/main"><img src="https://img.shields.io/github/last-commit/ferhatolmez/portfolio?style=for-the-badge&color=blue" alt="Last Commit" /></a>
+  </p>
+
+  <p align="center">
+    <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-14.2.3-black?style=flat-square&logo=next.js&logoColor=white" alt="Next.js" /></a>
+    <a href="https://reactjs.org/"><img src="https://img.shields.io/badge/React-18-blue?style=flat-square&logo=react&logoColor=white" alt="React" /></a>
+    <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" /></a>
+    <a href="https://socket.io/"><img src="https://img.shields.io/badge/Socket.IO-Realtime-black?style=flat-square&logo=socketdotio&logoColor=white" alt="Socket.IO" /></a>
+    <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-Backend-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" /></a>
   </p>
 </div>
 
