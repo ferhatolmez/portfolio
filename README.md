@@ -1,9 +1,4 @@
 <div align="center">
-  
-  <a href="https://ferhatolmez.vercel.app">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Ferhat%20%C3%96lmez&fontSize=50&animation=fadeIn&fontAlignY=38&desc=Junior%20Full-Stack%20Developer&descAlignY=55&descAlign=50" alt="Ferhat Ölmez Portfolio Banner" width="100%" />
-  </a>
-  <br/>
   <h1 align="center">🌌 Ferhat Ölmez — 3D Interactive Developer Portfolio</h1>
 
   <p align="center">
