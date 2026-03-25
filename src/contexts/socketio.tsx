@@ -80,6 +80,10 @@ const SocketContextProvider = ({ children }: { children: ReactNode }) => {
       localStorage.setItem(SESSION_ID_KEY, (sessionId));
     });
 
+    socket.on("users", (activeUsers) => {
+      setUsers(activeUsers || []);
+    });
+
     socket.on("msg-receive", (msgs) => {
       setMsgs((p) => [...p, msgs]);
     });

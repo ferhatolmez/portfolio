@@ -45,15 +45,40 @@ io.on('connection', (socket) => {
   socket.emit('session', { sessionId: socket.sessionId });
   socket.emit('msgs-receive-init', msgs);
 
-  // Kullanıcıyı aktif listesine ekle
-  users.set(socket.id, { id: socket.id, sessionId: socket.sessionId });
-  io.emit('users-update', Array.from(users.values()));
+  // Frontend'in TypeScript User interface'ine tam uyan kullanıcı objesi
+  const userObj = {
+    id: socket.sessionId,
+    socketId: socket.id,
+    name: "Guest",
+    avatar: "1",
+    color: "#60a5fa",
+    isOnline: true
+  };
+  users.set(socket.id, userObj);
+  // HATA FIX: 'users-update' yerine bağlanan istemci aslında Context içerisinde 'users-update' mi dinliyor yoksa 'users'?
+  io.emit('users', Array.from(users.values()));
+
+  // Kullanıcı profili güncelleme (isim, avatar)
+  socket.on('update-user', (data) => {
+    const user = users.get(socket.id);
+    if (user) {
+      if (data.username) user.name = data.username;
+      if (data.avatar) user.avatar = data.avatar;
+      if (data.color) user.color = data.color;
+      io.emit('users', Array.from(users.values()));
+    }
+  });
 
   // Yeni mesaj geldiğinde
   socket.on('msg-send', (data) => {
+    const user = users.get(socket.id);
     const newMsg = {
-      ...data,
-      id: data.id || Math.random().toString(36).substring(2, 9),
+      content: data.content,
+      id: Math.random().toString(36).substring(2, 9),
+      sessionId: user ? user.id : socket.sessionId,
+      username: user ? user.name : "Guest",
+      avatar: user ? user.avatar : "1",
+      color: user ? user.color : "#60a5fa",
       createdAt: new Date()
     };
     
@@ -64,7 +89,7 @@ io.on('connection', (socket) => {
     
     // Herkese fırlat
     io.emit('msg-receive', newMsg);
-    console.log(`[MSG] ${newMsg.username || "Anonim"}: ${newMsg.content}`);
+    console.log(`[MSG] ${newMsg.username}: ${newMsg.content}`);
   });
 
   // Mesaj silme talebi
@@ -80,6 +105,6 @@ io.on('connection', (socket) => {
   socket.on('disconnect', () => {
     console.log(`[-] User disconnected: ${socket.id}`);
     users.delete(socket.id);
-    io.emit('users-update', Array.from(users.values()));
+    io.emit('users', Array.from(users.values()));
   });
 });
