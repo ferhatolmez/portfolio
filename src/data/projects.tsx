@@ -195,6 +195,44 @@ export type Project = {
 
 const projects: Project[] = [
   {
+    id: "su-tedarik",
+    category: "Freelance Client Project",
+    title: "Endüstriyel Su Tedarik Kurumsal Web Sitesi",
+    src: "/assets/projects-screenshots/su-tedarik/1.png",
+    screenshots: ["1.png"],
+    skills: {
+      frontend: [PROJECT_SKILLS.react, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.ts],
+      backend: [],
+    },
+    live: "https://xn--endstriyelsutedarik-79b.com/",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono text-2xl text-center">
+            Kurumsal Müşteri Çözümü
+          </TypographyP>
+          <TypographyP className="font-mono">
+            Gerçek bir müşteri için baştan uca tasarlanıp yayına alınan, modern, ultra hızlı ve SEO odaklı kurumsal portfolyo sitesi. 
+          </TypographyP>
+          <ProjectsLinks live={this.live} />
+          <TypographyH3 className="my-4 mt-8">
+            Performans ve Responsive Arayüz
+          </TypographyH3>
+          <p className="font-mono mb-2">
+            React ve Tailwind CSS kullanılarak her türlü mobil cihaza tam uyumlu geliştirilmiş arayüz. Yüksek site hızıyla müşteri deneyimini maksimize eden modern dokunuşlar.
+          </p>
+          <SlideShow
+            images={[
+              `${BASE_PATH}/su-tedarik/1.png`,
+              `${BASE_PATH}/su-tedarik/2.png`,
+              `${BASE_PATH}/su-tedarik/3.png`
+            ]}
+          />
+        </div>
+      );
+    },
+  },
+  {
     id: "mern-chat",
     category: "Real-time Communication",
     title: "MERN Stack Chat Platform",
