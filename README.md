@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 align="center">🌌 Ferhat Ölmez — 3D Interactive Developer Portfolio</h1>
+  <h1 align="center">🌌 3D Interactive Developer Portfolio</h1>
 
   <p align="center">
     A highly interactive, visually stunning, and performance-optimized 3D portfolio built to showcase modern Full-Stack capabilities.<br/>
