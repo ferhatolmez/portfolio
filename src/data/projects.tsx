@@ -227,7 +227,8 @@ const projects: Project[] = [
 
       ],
     },
-    github: "https://github.com/ferhatolmez/mern-chat",
+    github: "https://github.com/ferhatolmez/mernapp",
+    live: "https://mernapp-ecru.vercel.app/",
     get content() {
       return (
         <div>
@@ -341,7 +342,8 @@ const projects: Project[] = [
       frontend: [PROJECT_SKILLS.bootstrap, PROJECT_SKILLS.ts],
       backend: [PROJECT_SKILLS.laravel, PROJECT_SKILLS.postgres],
     },
-    github: "https://github.com/ferhatolmez/lohusa-platform",
+    github: "https://github.com/ferhatolmez/LohusaVeBebekLaravel",
+    live: "https://lohusa-bebek-izlem.onrender.com/",
     get content() {
       return (
         <div>
