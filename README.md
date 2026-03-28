@@ -1,4 +1,5 @@
 <div align="center">
+  <img width="1610" height="616" alt="image" src="https://github.com/user-attachments/assets/f50179d2-7a34-4aef-8ec8-998827c82a19" />
   <h1 align="center">🌌 3D Interactive Developer Portfolio</h1>
 
   <p align="center">
